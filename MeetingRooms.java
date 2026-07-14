@@ -38,3 +38,11 @@ public class MeetingRooms {
         sc.close();
     }
 }
+
+
+// 🎤 Interview Explanation
+
+// "I first sort the meetings by their start time. Then I compare each meeting's start time 
+// with the previous meeting's end time. If the current meeting starts before the previous meeting ends, 
+// the meetings overlap, so one person cannot attend all meetings. Otherwise, I continue checking.
+//  If no overlap is found after traversing all meetings, I return true."
