@@ -27,11 +27,11 @@ public class FractionalKnapsack {
 
             int idx = (int) ratio[i][0];
 
-            if (capacity >= weight[idx]) {
+            if (capacity >= weight[idx]) { // include full item
                 finalValue += val[idx];
                 capacity -= weight[idx];
             } else {
-                finalValue += ratio[i][1] * capacity;
+                finalValue += ratio[i][1] * capacity; // include fractional item
                 break;
             }
         }
