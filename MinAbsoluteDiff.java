@@ -15,3 +15,7 @@ public class MinAbsoluteDiff {
 
   }
 }
+
+// "I use a Greedy approach. First, I sort both arrays in ascending order. Then I pair the smallest element of the first array with the smallest element 
+// of the second array, the second smallest with the second smallest, and so on. This minimizes the absolute difference for every pair, 
+// resulting in the minimum total difference."
