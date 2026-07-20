@@ -39,3 +39,9 @@ public class JobSequencing {
   }
   
 }
+
+
+
+// I first created a Job class to store the job ID, deadline, and profit. Then I sorted all jobs in descending order of profit because selecting
+// higher-profit jobs first is a greedy strategy to maximize profit. While traversing the sorted jobs, I selected a job if its deadline allowed 
+// it to fit into the current available time slot and stored the selected job IDs.
