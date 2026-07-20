@@ -38,3 +38,10 @@ public class Chocola {
 
   
 }
+
+
+
+
+// "I solved this problem using a Greedy approach. First, I sorted both horizontal and vertical cut costs in descending order. At every step,
+// I always chose the more expensive cut because delaying it would increase its total cost as it gets multiplied by more pieces. After each cut, 
+// I updated the number of horizontal or vertical pieces. This greedy strategy guarantees the minimum total cutting cost."
