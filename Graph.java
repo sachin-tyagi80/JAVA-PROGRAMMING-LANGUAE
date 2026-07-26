@@ -67,3 +67,38 @@ public class Graph {
     }
   
 }
+
+
+// 30-Second Interview Explanation
+// "This code implements Breadth First Search (BFS) using an adjacency list. It starts from vertex 0, uses a queue to visit nodes level by level, 
+// and a visited array to ensure each vertex is processed only once. For every dequeued vertex, it visits all its neighbours and enqueues the unvisited ones. 
+// The time complexity is O(V + E) and the space complexity is O(V)."
+////////////////////////////////////////////////////////////////////////////////////
+// Interview Follow-up Questions
+// Q1. Why do we use a Queue?
+// Answer
+// BFS explores nodes level by level, so it follows the FIFO (First In, First Out) principle. A Queue naturally supports FIFO order.
+  
+// Q2. Why do we use a Visited array?
+// Answer
+// To avoid visiting the same vertex multiple times and to prevent infinite loops in graphs containing cycles.
+
+// Q3. Why Adjacency List instead of Matrix?
+// Answer
+// Adjacency List uses O(V + E) space and is more efficient for sparse graphs. Most graph algorithms such as BFS and DFS use it.
+
+// Q4. Can BFS work without a visited array?
+// Answer
+// It works only for trees. In general graphs with cycles, a visited array is required; otherwise, the algorithm may revisit nodes indefinitely.
+
+// Q5. Why is the complexity O(V + E)?
+// Answer
+// Every vertex is visited at most once, and every edge is examined at most once, so the total time complexity is O(V + E).
+
+// Q6. What are the applications of BFS?
+// Shortest Path in an Unweighted Graph
+// Level Order Traversal of Trees
+// Social Network Analysis
+// Web Crawling
+// Connected Components
+// Network Broadcasting
