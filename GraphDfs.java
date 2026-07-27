@@ -61,3 +61,45 @@ public class GraphDfs {
     }
   
 }
+
+
+// 30-Second Interview Explanation
+// "This code implements Depth First Search (DFS) using recursion and an adjacency list. Starting from the source vertex, it marks the current vertex as visited, 
+// prints it, and recursively visits each unvisited neighbour. DFS explores one path completely before backtracking to explore other paths. 
+// The time complexity is O(V + E), and the space complexity is O(V) due to the visited array and recursion stack."
+
+// Why Recursion?
+// English
+// DFS follows one path completely before returning to explore another path.
+// Recursion automatically uses the call stack.
+
+
+// Interview Follow-up Questions
+// Q1. Why do we use a visited array?
+// Answer
+// To avoid visiting the same vertex multiple times and to prevent infinite recursion in graphs containing cycles.
+  
+// Q2. Why does DFS use recursion?
+// Answer
+// DFS explores one path as deep as possible before backtracking. Recursion naturally manages this behaviour using the call stack.
+
+// Q3. Can DFS be implemented without recursion?
+// Answer
+// Yes. DFS can also be implemented iteratively using an explicit Stack.
+
+// Q4. Why is the complexity O(V + E)?
+// Answer
+// Every vertex is visited once, and every edge is explored once.
+
+// Q5. What is backtracking?
+// Answer
+// When a vertex has no unvisited neighbours, DFS returns to the previous recursive call to continue exploring other paths.
+
+// Q6. What are the applications of DFS?
+// Cycle Detection
+// Topological Sort
+// Connected Components
+// Path Finding
+// Maze Solving
+// Strongly Connected Components
+// Bridge and Articulation Point algorithms
