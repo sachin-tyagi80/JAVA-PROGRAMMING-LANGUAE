@@ -21,6 +21,7 @@ public class GraphDfs {
         }
       }
     }
+    
     public static void main(String[] args) {
       int n = 7; // number of vertices
       ArrayList<Edge> graph[] = new ArrayList[n]; // null -> empty arraylist 
@@ -58,9 +59,9 @@ public class GraphDfs {
       graph[6].add(new Edge(6,5,1));  
   
      dfs(graph,0,new boolean[n]); // source vertex = 0
-    }
+    };
   
-}
+};
 
 
 // 30-Second Interview Explanation
@@ -102,4 +103,3 @@ public class GraphDfs {
 // Path Finding
 // Maze Solving
 // Strongly Connected Components
-// Bridge and Articulation Point algorithms
