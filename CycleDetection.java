@@ -72,3 +72,10 @@ public class CycleDetection {
 
   
 }
+
+
+
+// "I am using DFS to detect a cycle in an undirected graph. I maintain a visited array and also keep track of the
+// parent of every current node. If I find an unvisited neighbor, I recursively visit it. If I find a visited 
+// neighbor that is not the parent, then there is a cycle. The outer loop is used because the graph can be 
+// disconnected, so we need to check every component."
