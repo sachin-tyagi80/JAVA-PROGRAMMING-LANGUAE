@@ -42,7 +42,7 @@ public class CycleDetection {
       if(!vis[i]){
         if(detectCycleUtil(graph,i,vis,-1)){
           return true; // cycle exists in one of the parts of the graph
-        }
+        }  
       }
     }
     return false; // cycle doesn't exist in any part of the graph
