@@ -110,3 +110,14 @@ public class DirectedCycle {
         System.out.println(isCycle(graph));
     }
 }
+
+
+// “For directed cycle detection, I use DFS with two arrays: visited and recStack. visited tells whether a vertex
+// has ever been visited, while recStack tells whether the vertex is present in the current DFS path. During DFS,
+// I mark both as true. If I find an unvisited neighbour, I recursively visit it. If I find a neighbour that is 
+// already in recStack, it means there is a back edge to the current DFS path, so a cycle exists. 
+// Before returning from DFS, I remove the current vertex from recStack.”
+
+// Complexity
+// Time  = O(V + E)
+// Space = O(V)
